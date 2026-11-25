@@ -1,39 +1,35 @@
 import Navbar from './components/Navbar';
-import Hero from './components/Hero';
-import About from './components/About';
-import Education from './components/Education';
-import Skills from './components/Skills';
-import Experience from './components/Experience';
-import Projects from './components/Projects';
-import Contact from './components/Contact';
-import Footer from './components/Footer';
+import Hero from './sections/Hero';
+import About from './sections/About';
+import Skills from './sections/Skills';
+import Experience from './sections/Experience';
+import Education from './sections/Education';
+import Projects from './sections/Projects';
+import Contact from './sections/Contact';
+import Footer from './sections/Footer';
 
 export default function App() {
   return (
-    <div className="relative min-h-screen bg-dark text-white overflow-hidden">
-      {/* Ambient radial cyan/teal glow matching the dark reference aesthetic */}
-      <div
-        aria-hidden="true"
-        className="pointer-events-none fixed inset-0 z-0"
-        style={{
-          background:
-            'radial-gradient(620px circle at 10% 18%, rgba(0, 238, 255, 0.12), transparent 60%), radial-gradient(520px circle at 88% 72%, rgba(59, 130, 246, 0.08), transparent 60%)',
-        }}
-      />
-
-      <div className="relative z-10 flex flex-col min-h-screen">
-        <Navbar />
-        <main className="flex-grow">
-          <Hero />
-          <About />
-          <Education />
-          <Skills />
-          <Experience />
-          <Projects />
-          <Contact />
-        </main>
-        <Footer />
+    <div className="min-h-screen flex flex-col relative">
+      {/* Background Glow Effects */}
+      <div className="fixed top-0 left-0 w-full h-full overflow-hidden -z-10 pointer-events-none">
+        <div className="absolute top-[-10%] left-[-10%] w-[40vw] h-[40vw] bg-cyan-neon/10 rounded-full blur-[120px] mix-blend-screen"></div>
+        <div className="absolute bottom-[-10%] right-[-10%] w-[50vw] h-[50vw] bg-blue-900/20 rounded-full blur-[150px] mix-blend-screen"></div>
       </div>
+
+      <Navbar />
+
+      <main className="flex-grow pt-24">
+        <Hero />
+        <About />
+        <Skills />
+        <Experience />
+        <Education />
+        <Projects />
+        <Contact />
+      </main>
+
+      <Footer />
     </div>
   );
 }
