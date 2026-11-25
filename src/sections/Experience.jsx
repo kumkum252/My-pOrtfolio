@@ -3,7 +3,7 @@ import { Briefcase } from 'lucide-react';
 
 const experienceData = [
   {
-    role: 'Winter Web Development Intern',
+    role: 'Web Development Intern',
     company: 'NIELET Buxar',
     duration: '22 Dec 2025 – 4 Jan 2026 (2 Weeks)',
     points: [
