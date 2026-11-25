@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { FaGithub, FaExternalLinkAlt } from 'react-icons/fa';
+import { Github, ExternalLink } from 'lucide-react';
 
 const projectData = [
   {
@@ -75,7 +75,7 @@ const Projects = () => {
                       rel="noreferrer"
                       className="flex items-center gap-2 text-sm font-medium text-white hover:text-cyan-neon transition-colors"
                     >
-                      <FaGithub /> GitHub
+                      <Github size={16} /> GitHub
                     </a>
                   )}
                   {project.live !== '#' && (
@@ -85,7 +85,7 @@ const Projects = () => {
                       rel="noreferrer"
                       className="flex items-center gap-2 text-sm font-medium text-white hover:text-cyan-neon transition-colors"
                     >
-                      <FaExternalLinkAlt /> Live Demo
+                      <ExternalLink size={16} /> Live Demo
                     </a>
                   )}
                 </div>

@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { motion } from 'framer-motion';
-import { FaEnvelope, FaMapMarkerAlt, FaLinkedin, FaGithub } from 'react-icons/fa';
+import { Mail, MapPin, Linkedin, Github } from 'lucide-react';
 
 // Add your Web3Forms access key here when ready to receive submissions directly:
 const WEB3FORMS_ACCESS_KEY = '';
@@ -77,7 +77,7 @@ const Contact = () => {
             <div className="flex flex-col gap-6">
               <div className="flex items-center gap-4 group">
                 <div className="w-12 h-12 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-cyan-neon shadow-[0_0_10px_rgba(0,238,255,0.1)]">
-                  <FaMapMarkerAlt />
+                  <MapPin size={18} />
                 </div>
                 <span className="text-gray-300">{CONTACT_INFO.location}</span>
               </div>
@@ -85,7 +85,7 @@ const Contact = () => {
               {CONTACT_INFO.email && (
                 <a href={`mailto:${CONTACT_INFO.email}`} className="flex items-center gap-4 group">
                   <div className="w-12 h-12 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-cyan-neon group-hover:bg-cyan-neon group-hover:text-dark transition-all duration-300 shadow-[0_0_10px_rgba(0,238,255,0.1)]">
-                    <FaEnvelope />
+                    <Mail size={18} />
                   </div>
                   <span className="text-gray-300 group-hover:text-white transition-colors">
                     {CONTACT_INFO.email}
@@ -101,7 +101,7 @@ const Contact = () => {
                   className="flex items-center gap-4 group"
                 >
                   <div className="w-12 h-12 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-cyan-neon group-hover:bg-cyan-neon group-hover:text-dark transition-all duration-300 shadow-[0_0_10px_rgba(0,238,255,0.1)]">
-                    <FaLinkedin />
+                    <Linkedin size={18} />
                   </div>
                   <span className="text-gray-300 group-hover:text-white transition-colors">
                     LinkedIn Profile
@@ -117,7 +117,7 @@ const Contact = () => {
                   className="flex items-center gap-4 group"
                 >
                   <div className="w-12 h-12 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-cyan-neon group-hover:bg-cyan-neon group-hover:text-dark transition-all duration-300 shadow-[0_0_10px_rgba(0,238,255,0.1)]">
-                    <FaGithub />
+                    <Github size={18} />
                   </div>
                   <span className="text-gray-300 group-hover:text-white transition-colors">
                     GitHub Profile

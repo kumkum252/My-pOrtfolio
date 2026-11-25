@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { FaGraduationCap, FaBriefcase, FaCode } from 'react-icons/fa';
+import { GraduationCap, Briefcase, Code2 } from 'lucide-react';
 
 const About = () => {
   return (
@@ -29,15 +29,15 @@ const About = () => {
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-4">
             <div className="flex flex-col items-center p-4 bg-white/5 rounded-xl border border-white/10 hover:border-cyan-neon/30 transition-colors">
-              <FaGraduationCap className="text-3xl text-cyan-neon mb-3" />
+              <GraduationCap className="text-3xl text-cyan-neon mb-3" size={30} />
               <h4 className="font-semibold text-lg text-white">B.Tech (Pursuing)</h4>
             </div>
             <div className="flex flex-col items-center p-4 bg-white/5 rounded-xl border border-white/10 hover:border-cyan-neon/30 transition-colors">
-              <FaBriefcase className="text-3xl text-cyan-neon mb-3" />
+              <Briefcase className="text-3xl text-cyan-neon mb-3" size={30} />
               <h4 className="font-semibold text-lg text-white">Technical Intern</h4>
             </div>
             <div className="flex flex-col items-center p-4 bg-white/5 rounded-xl border border-white/10 hover:border-cyan-neon/30 transition-colors">
-              <FaCode className="text-3xl text-cyan-neon mb-3" />
+              <Code2 className="text-3xl text-cyan-neon mb-3" size={30} />
               <h4 className="font-semibold text-lg text-white">Frontend Developer</h4>
             </div>
           </div>

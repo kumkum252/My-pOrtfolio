@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { FiMenu, FiX } from 'react-icons/fi';
+import { Menu, X } from 'lucide-react';
 
 const navLinks = [
   { name: 'Home', href: '#home' },
@@ -57,7 +57,7 @@ const Navbar = () => {
           className="md:hidden text-2xl text-white"
           onClick={() => setIsOpen(!isOpen)}
         >
-          {isOpen ? <FiX /> : <FiMenu />}
+          {isOpen ? <X size={22} /> : <Menu size={22} />}
         </button>
       </div>
 

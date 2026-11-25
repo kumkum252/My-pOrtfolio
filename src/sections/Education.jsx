@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { FaGraduationCap } from 'react-icons/fa';
+import { GraduationCap } from 'lucide-react';
 
 const educationData = [
   {
@@ -52,7 +52,7 @@ const Education = () => {
                 <div className="flex flex-col md:flex-row md:justify-between md:items-start mb-3">
                   <div>
                     <h3 className="text-xl font-bold text-white flex items-center gap-2">
-                      <FaGraduationCap className="text-cyan-neon text-sm shrink-0" />
+                      <GraduationCap className="text-cyan-neon shrink-0" size={18} />
                       {edu.degree}
                     </h3>
                     <h4 className="text-lg text-gray-300 font-medium mt-1">{edu.institution}</h4>

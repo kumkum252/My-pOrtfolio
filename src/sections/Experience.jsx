@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { FaBriefcase } from 'react-icons/fa';
+import { Briefcase } from 'lucide-react';
 
 const experienceData = [
   {
@@ -44,7 +44,7 @@ const Experience = () => {
                 <div className="flex flex-col md:flex-row md:justify-between md:items-start mb-4">
                   <div>
                     <h3 className="text-xl font-bold text-white flex items-center gap-2">
-                      <FaBriefcase className="text-cyan-neon text-sm" />
+                      <Briefcase className="text-cyan-neon shrink-0" size={16} />
                       {exp.role}
                     </h3>
                     <h4 className="text-lg text-cyan-neon font-medium mt-1">{exp.company}</h4>
