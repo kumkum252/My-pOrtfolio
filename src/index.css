@@ -1,0 +1,62 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    background-color: #080b0f;
+  }
+
+  body {
+    background-color: #080b0f;
+    color: #ffffff;
+    overflow-x: hidden;
+  }
+
+  ::-webkit-scrollbar {
+    width: 8px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: #080b0f;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: #1a2430;
+    border-radius: 9999px;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: #00eeff;
+  }
+}
+
+@layer components {
+  .glass-card {
+    @apply bg-white/[0.03] backdrop-blur-md border border-white/10 rounded-2xl transition-all duration-300;
+  }
+
+  .glass-card:hover {
+    @apply border-cyan-neon/35 shadow-[0_0_25px_rgba(0,238,255,0.08)];
+  }
+
+  .section-title {
+    @apply text-3xl md:text-4xl font-bold text-center mb-14 tracking-tight;
+  }
+
+  .btn-primary {
+    @apply inline-flex items-center justify-center gap-2 px-7 py-2.5 rounded-full text-sm font-semibold
+      text-cyan-neon border border-cyan-neon/80 bg-cyan-neon/5
+      shadow-[0_0_16px_rgba(0,238,255,0.22)]
+      hover:bg-cyan-neon hover:text-dark hover:shadow-[0_0_24px_rgba(0,238,255,0.55)]
+      transition-all duration-300;
+  }
+
+  .btn-secondary {
+    @apply inline-flex items-center justify-center gap-2 px-7 py-2.5 rounded-full text-sm font-semibold
+      text-white bg-white/[0.08] border border-white/10
+      hover:bg-white/[0.15] hover:border-cyan-neon/40
+      transition-all duration-300;
+  }
+}
